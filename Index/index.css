@@ -1,0 +1,233 @@
+.active {
+   background-color: rgb(230, 252, 215);
+   color: rgb(9, 156, 241);
+   font-weight: bold;
+}
+
+.top-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   background-color: #b5e51d;
+}
+
+.menu-links {
+   margin-left: 10;
+   display: flex;
+}
+
+.menu-link {
+   text-decoration: none;
+   display: block;
+   padding: 5px 10px;
+   margin: 0 1px;
+   border-top-right-radius: 30%;
+   border-top-left-radius: 30%;
+   border: 1px solid, rgb(230, 252, 215);
+}
+
+.menu-link:hover {
+   color: rgb(9, 156, 241);
+   font-weight: bold;
+   background-color: rgb(230, 252, 215);
+   border-top-right-radius: 30%;
+}
+
+textarea {
+   font-size: 16px;
+   font-family: 'Times New Roman', Georgia, Times, serif;
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+body {
+   background-color: rgb(230, 252, 215);
+}
+
+.logo {
+   display: block;
+   height: 100px;
+   min-width: 250px;
+   background-color: #b5e51d;
+   text-align: left;
+}
+
+.navigation {
+   text-align: center;
+}
+
+.hideBtn, .hideLogo {
+   display: none;
+}
+
+.btn {
+   color: white;
+   background-color: rgb(66, 2, 240);
+   margin-bottom: 20px;
+   width: 100px;
+   height: 30px;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: rgb(8, 8, 245);
+   color:rgb(182, 179, 164);
+   font-weight: bold;
+}
+
+table td:first-child {
+   text-align: left;
+   height: 24px;
+}
+table td:nth-child(4) {
+   text-align: left;
+}
+table td:nth-child(5) {
+   text-align: right;
+}
+table, .tableCare {
+   width: 100%;
+}
+
+div.packeging {
+   display: block;
+}
+
+.participant{
+   text-align: center;
+}
+
+.cause {
+   box-sizing: border-box;
+   width: 100%;
+   background-color: rgb(29, 28, 28);
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   border: 2px solid black;
+}
+
+.causeIn {
+   box-sizing: border-box;
+   width: 100%;
+   background-color: rgb(29, 28, 28);
+   color: white;
+   text-align: left;
+   font-weight: bold;
+   border: 2px solid black;
+}
+
+.mark {
+   display: inline-block;
+}
+
+label, input {
+   cursor: pointer;
+}
+
+fieldset, .dimension {
+   margin-bottom: 3px;
+}
+
+.part{
+   box-sizing: border-box;
+   width: 50%;
+   border: 1px solid black;
+}
+
+.partition{
+   box-sizing: border-box;
+   width: 50%;
+   background-color: rgb(102, 101, 101);
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   border: 2px solid black;
+}
+
+.twoFlexed{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 5px;
+}
+
+h1, h2, h3 {
+   font-family: 'Times New Roman', Times, serif;
+   white-space: nowrap;
+   text-align: center;
+   margin: 0;   
+}
+
+h1 {
+   font-size: 40px;
+}
+
+h2 {
+   font-size: 30px;
+}
+
+.mother{
+   width: 1050px;
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* div, td {
+   outline-width: 1px;
+   outline-style: solid;
+   outline-color: red;
+   margin: 5px;
+} */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li,  form, label, caption, tbody, tfoot, thead, article, aside, canvas, 
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video /*table, tr, th, td,*/ {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display: block;
+   margin-bottom: 10px;
+}
+
+body {
+   line-height: 1;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+   content: '';
+   content: none;
+}
+
+select {
+   text-align: left;
+}
