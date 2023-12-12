@@ -168,18 +168,30 @@ document.getElementsByName('protDem_scotch').forEach((item) => {
    })
 });
 
-document.querySelector('input#weight3Inv').addEventListener('click', () => {
-   const len = Number(weight3Inv.closest('.marks').querySelector('input#length').value);
-   const wid = Number(weight3Inv.closest('.marks').querySelector('input#width').value);
-   const hei = Number(weight3Inv.closest('.marks').querySelector('input#heght').value);
-   weight3Inv.value = ((len * wid * hei) / 5000).toFixed(2);
+const wQInvs_val = document.querySelector('input#wQInv');
+const wQFact_val = document.querySelector('input#wQInv');
+const lenI = document.querySelector('#lengInv');
+const widI = document.querySelector('#widthInv');
+const heiI = document.querySelector('#hightInv');
+const lenF = document.querySelector('#lengFact');
+const widF = document.querySelector('#widthFact');
+const heiF = document.querySelector('hightFact');
+
+document.querySelector('input#wQInv').addEventListener('click', () => {
+   if (lenI.value || widI.value || heiI.value) {
+      wQInvs_val.value = (Number(lenI.value * widI.value * heiI.value) / 5000).toFixed(2);
+   } else {
+      wQInvs_val.value = 0;
+   }
 });
 
-document.querySelector('input#weight3Fact').addEventListener('click', () => {
-   const len = Number(weight3Fact.closest('.marks').querySelector('input#length').value);
-   const wid = Number(weight3Fact.closest('.marks').querySelector('input#width').value);
-   const hei = Number(weight3Fact.closest('.marks').querySelector('input#heght').value);
-   weight3Fact.value = ((len * wid * hei) / 5000).toFixed(2);
+document.querySelector('input#wQfact').addEventListener('click', () => {
+      if (lenF.value || widF.value || heiF.value) {
+         wQFact_val.value = (Number(lenF.value * widF.value * heiF.value) / 5000).toFixed(2);
+      } else {
+         wQFact_val.value = 0;
+      }
+   // = ((len * wid * hei) / 5000).toFixed(2);
 });
 
 
@@ -194,11 +206,6 @@ document.querySelector('.print').addEventListener("click", () => {
    document.querySelector('.top-menu').classList.remove("hideLogo")
 });
 
-document.querySelector('.fresh').addEventListener("click", (e) => {
-   e.preventDefault()
-   window.location.reload()
-});
+document.querySelector('.send').addEventListener('click', () => {
 
-document.querySelector('.save').addEventListener('click', () => {
-   const saveField = document.querySelector('.mother')
 });

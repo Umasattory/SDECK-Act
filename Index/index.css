@@ -1,3 +1,14 @@
+label.sizes {
+   display: block;
+   margin: 2px;
+   white-space: nowrap;
+}
+.fieldDescript {
+   margin-left: 2px;
+}
+a.menu-link {
+   white-space: nowrap;
+}
 .active {
    background-color: rgb(230, 252, 215);
    color: rgb(9, 156, 241);
@@ -28,7 +39,6 @@
 
 .menu-link:hover {
    color: rgb(9, 156, 241);
-   font-weight: bold;
    background-color: rgb(230, 252, 215);
    border-top-right-radius: 30%;
 }
@@ -62,6 +72,7 @@ body {
 
 .btn {
    color: white;
+   border: none;
    background-color: rgb(66, 2, 240);
    margin-bottom: 20px;
    width: 100px;
@@ -89,8 +100,10 @@ table, .tableCare {
    width: 100%;
 }
 
-div.packeging {
+label.packeging {
    display: block;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 .participant{
@@ -119,6 +132,7 @@ div.packeging {
 
 .mark {
    display: inline-block;
+   white-space: nowrap;
 }
 
 label, input {
