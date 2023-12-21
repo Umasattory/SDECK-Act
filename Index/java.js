@@ -169,13 +169,13 @@ document.getElementsByName('protDem_scotch').forEach((item) => {
 });
 
 const wQInvs_val = document.querySelector('input#wQInv');
-const wQFact_val = document.querySelector('input#wQInv');
+const wQFact_val = document.querySelector('input#wQFact');
 const lenI = document.querySelector('#lengInv');
 const widI = document.querySelector('#widthInv');
 const heiI = document.querySelector('#hightInv');
 const lenF = document.querySelector('#lengFact');
 const widF = document.querySelector('#widthFact');
-const heiF = document.querySelector('hightFact');
+const heiF = document.querySelector('#hightFact');
 
 document.querySelector('input#wQInv').addEventListener('click', () => {
    if (lenI.value || widI.value || heiI.value) {
@@ -185,7 +185,7 @@ document.querySelector('input#wQInv').addEventListener('click', () => {
    }
 });
 
-document.querySelector('input#wQfact').addEventListener('click', () => {
+document.querySelector('input#wQFact').addEventListener('click', () => {
       if (lenF.value || widF.value || heiF.value) {
          wQFact_val.value = (Number(lenF.value * widF.value * heiF.value) / 5000).toFixed(2);
       } else {
