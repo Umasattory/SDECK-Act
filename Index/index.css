@@ -1,3 +1,29 @@
+
+.blankBlock {
+   border: 2px solid black;
+}
+
+.saver {
+   color: white;
+   background-color: rgb(66, 2, 240);
+   border: none;
+   position: absolute;
+   padding: 5px 20px;
+   bottom: 5px;
+   right: 5px;
+}
+
+.saver:hover {
+   background-color: rgb(8, 8, 245);
+   color: rgb(182, 179, 164);
+}
+
+.contention {
+   width: 310px;
+   height: 300px;
+   position: relative;
+}
+
 label.sizes {
    display: block;
    margin: 2px;
@@ -152,7 +178,7 @@ fieldset, .dimension {
 .partition{
    box-sizing: border-box;
    width: 50%;
-   background-color: rgb(102, 101, 101);
+   background-color: #666565;
    color: white;
    text-align: center;
    font-weight: bold;
@@ -190,12 +216,12 @@ h2 {
    margin-right: auto;
 }
 
-/* div, td {
+div, td, th {
    outline-width: 1px;
    outline-style: solid;
    outline-color: red;
    margin: 5px;
-} */
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
