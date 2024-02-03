@@ -16,616 +16,657 @@
          <a class="menu-link" href="index.html">Главное</a>
          <a class="menu-link" href="chertOffice.html">Чертаново</a>
          <a class="menu-link" href="lyubyanka.html">Лубянка</a>
-         <a class="menu-link" href="office.html">Бланки</a>         
-         <a class="menu-link" target="_blank" href="https://disk.yandex.ru/edit/d/bNWKWimFqq7zIsMVxEe1ASPegnqahzm72s0qoIz-cKg6QTNNZi1UWmNmdw">Дневной отчет</a>
+         <a class="menu-link" href="office.html">Бланки</a>
+         <a class="menu-link" target="_blank"
+            href="https://disk.yandex.ru/edit/d/bNWKWimFqq7zIsMVxEe1ASPegnqahzm72s0qoIz-cKg6QTNNZi1UWmNmdw">Дневной
+            отчет</a>
          <a class="menu-link active" href="act.html">Акт</a>
          <a class="menu-link" target="_blank" href="https://ek5.cdek.ru/login">ЕК-5 КЛО</a>
       </div>
    </div>
-      <div class="mother"> <!--MotherBoard -->
-         <header class="header ">
-            <div class="headText">
-               <h1>АКТ</h1>
-               <h3>ОБНАРУЖЕНИЯ НЕСООТВЕТСТВИЙ</h3>
-               <h3>претензия по браку/несоответвию/деформации/пересорту/порчи и/или <br> повреждению посылки</h3>
+   <div class="mother">
+      <!--MotherBoard -->
+      <header class="header ">
+         <div class="headText">
+            <h1>АКТ</h1>
+            <h3>ОБНАРУЖЕНИЯ НЕСООТВЕТСТВИЙ</h3>
+            <h3>претензия по браку/несоответвию/деформации/пересорту/порчи и/или <br> повреждению посылки</h3>
+         </div>
+      </header>
+      <form action="#" method="POST" name="formAct" enctype="text/plain">
+         <main class="main">
+            <div class="containers twoFlexed">
+               <div class="contain">
+                  <div class="date"></div>
+               </div>
+               <label class="contain">
+                  <span class="fieldDescript">гор.</span>
+                  <select id="city">
+                     <option>Москва</option>
+                     <option>Санкт-Петербург</option>
+                     <option>Екатеринбург</option>
+                     <option>Краснодар</option>
+                  </select>
+               </label>
             </div>
-         </header>
-         <form action="#" method="POST" name="formAct" enctype="text/plain" >
-            <main class="main">
-               <div class="containers twoFlexed">
-                  <div class="contain">
-                     <div class="date"></div>
+            <div class="containers twoFlexed">
+               <label class="contain">
+                  <span class="fieldDescript">Представитель службы доставки "Экспресс Доставка"</span>
+                  <select id="manager">
+                     <option value="chekedLine" selected>-- выбор --</option>
+                     <optgroup class="chertanovo" id="chert" label="Отделение Чертановское">
+                        <option>Сатторов Умед</option>
+                        <option>Михайлов Алексей</option>
+                        <option>Дарбинян Анна</option>
+                        <option>Дадагов Шамиль</option>
+                        <option>Масалова Надежда</option>
+                        <option>Умяров Руслан</option>
+                        <option>Морозов Даниил</option>
+                     </optgroup>
+                     <optgroup class="lubyanka" id="lub" label="Отделение Лубянка">
+                        <option>Данилова Евгения</option>
+                        <option>Чаландарова Юлия</option>
+                        <option>Ухов Владислав</option>
+                        <option>Морозов Даниил</option>
+                        <option>Мириджанян Геворг</option>
+                     </optgroup>
+                  </select>
+               </label>
+               <label class="contain">
+                  <span class="fieldDescript">Клиент:</span>
+                  <input id="client" type="text" placeholder="ФИО Клиента" size="55px" />
+               </label>
+            </div>
+            <div class="containers twoFlexed">
+               <label class="contain">
+                  <span class="fieldDescript">Накладная №:</span>
+                  <input id="label" type="text" placeholder="Номер" size="20px" />
+               </label>
+               <label class="contain">
+                  <span class="fieldDescript">Конт.телефон клиента:</span>
+                  <input type="checkbox" name="priority" checked title="Приоритет для ответа">
+                  <input id="label" type="tel" placeholder="Телефон" size="20px" />
+               </label>
+               <label class="contain">
+                  <span class="fieldDescript">Эл.почта клиента</span>
+                  <input type="checkbox" name="priority" title="Приоритет для ответа">
+                  <input id="label" type="email" placeholder="exemple@exem.ex" size="20px" />
+               </label>
+            </div>
+            <div class="twoFlexed">
+               <div>сотавили настоящий акт о нижеследующем:</div>
+            </div>
+            <div class="partitions">
+               <div class="twoFlexed">
+                  <div class="partition">
+                     <p class="cause">СОГЛАСНО НАКЛАДНОЙ</p>
                   </div>
-                  <label class="contain">
-                     <span class="fieldDescript">гор.</span>
-                     <select id="city">
-                        <option>Москва</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Екатеринбург</option>
-                        <option>Краснодар</option>
-                     </select>
-                  </label>
-               </div>
-               <div class="containers twoFlexed">
-                  <label class="contain">
-                     <span class="fieldDescript">Представитель службы доставки "Экспресс Доставка"</span>
-                     <select id="manager">
-                        <option value="chekedLine" selected>-- выбор --</option>
-                        <optgroup class="chertanovo" id="chert" label="Отделение Чертановское">
-                           <option>Сатторов Умед</option>
-                           <option>Михайлов Алексей</option>
-                           <option>Дарбинян Анна</option>
-                           <option>Дадагов Шамиль</option>
-                           <option>Масалова Надежда</option>
-                           <option>Умяров Руслан</option>
-                           <option>Морозов Даниил</option>
-                        </optgroup>
-                        <optgroup class="lubyanka" id="lub" label="Отделение Лубянка">
-                           <option>Данилова Евгения</option>
-                           <option>Чаландарова Юлия</option>
-                           <option>Ухов Владислав</option>
-                           <option>Морозов Даниил</option>
-                           <option>Мириджанян Геворг</option>
-                        </optgroup>
-                     </select>
-                  </label>
-                  <label class="contain">
-                     <span class="fieldDescript">Клиент:</span>
-                     <input id="client" type="text" placeholder="ФИО Клиента" size="55px" />
-                  </label>
-               </div>
-               <div class="containers twoFlexed">
-                  <label class="contain">
-                     <span class="fieldDescript">Накладная №:</span>
-                     <input id="label" type="text" placeholder="Номер" size="20px" />
-                  </label>
-                  <label class="contain">
-                     <span class="fieldDescript">Конт.телефон клиента:</span>
-                     <input id="label" type="tel" placeholder="Телефон" size="20px" />
-                  </label>
-                  <label class="contain">
-                     <span class="fieldDescript">Эл.почта клиента</span>
-                     <input id="label" type="email" placeholder="exemple@exem.ex" size="20px" />
-                  </label>
+                  <div class="partition">
+                     <p class="cause">ПО ФАКТУ</p>
+                  </div>
                </div>
                <div class="twoFlexed">
-                  <div>сотавили настоящий акт о нижеследующем:</div>
-               </div>
-               <div class="partitions">
-                  <div class="twoFlexed">
-                     <div class="partition">
-                        <p class="cause">СОГЛАСНО НАКЛАДНОЙ</p>
+                  <div class="part invoice">
+                     <p>Сведения об Отправлении, заявленные Отправителем согласно накладной:</p>
+                     <div class="marks twoFlexed">
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Вид отправления:</legend>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;">Груз</span>
+                                 <input type="checkbox" name="departureInv" checked />
+                              </label>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;">Документы</span>
+                                 <input type="checkbox" name="departureInv" />
+                              </label>
+                           </fieldset>
+                           <fieldset>
+                              <legend>Наличие № упаковки <br> (пакета/пломбы/стикера):</legend>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;">Нет</span>
+                                 <input type="checkbox" name="packAvailInv" checked />
+                              </label>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;">Да</span>
+                                 <input type="checkbox" name="packAvailInv" />
+                              </label>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: left;">№</span>
+                                 <input type="text" name="numb" id="numb" size="7px" />
+                              </label>
+                           </fieldset>
+                        </div>
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Габариты:</legend>
+                              <label for="lengInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Длина</span>
+                                 <input type="text" name="lengthInv" id="lengInv" size="1px">
+                              </label>
+                              <label for="widthInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Ширина</span>
+                                 <input type="text" name="lengthInv" id="widthInv" size="1px">
+                              </label>
+                              <label for="hightInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Высота</span>
+                                 <input type="text" name="lengthInv" id="hightInv" size="1px">
+                              </label>
+                           </fieldset>
+                        </div>
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Вес и кол-во:</legend>
+                              <label for="seatInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Мест</span>
+                                 <input type="text" name="seatInv" id="seatInv" size="1px">
+                              </label>
+                              <label for="weightInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Вес.физ</span>
+                                 <input type="text" name="weightInv" id="weightInv" size="1px">
+                              </label>
+                              <label for="wQInv" class="sizes">
+                                 <span class="fieldDescript" style="float: right">вес.куб</span>
+                                 <input type="text" name="wQInv" id="wQInv" size="1px">
+                              </label>
+                           </fieldset>
+                        </div>
                      </div>
-                     <div class="partition">
-                        <p class="cause">ПО ФАКТУ</p>
+                     <p>Описание вложения (согласно накладной):____________________________</p>
+                     <div class="twoFlexed">
+                        <textarea style="width: 100%; height: 50px;"></textarea>
                      </div>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="part invoice">
-                        <p>Сведения об Отправлении, заявленные Отправителем согласно накладной:</p>
-                        <div class="marks twoFlexed">
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Вид отправления:</legend>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;">Груз</span>
-                                    <input type="checkbox" name="departureInv" checked />
-                                 </label>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;">Документы</span>
-                                    <input type="checkbox" name="departureInv" />
-                                 </label>
-                              </fieldset>
-                              <fieldset>
-                                 <legend>Наличие № упаковки <br> (пакета/пломбы/стикера):</legend>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;">Нет</span>
-                                    <input type="checkbox" name="packAvailInv" checked />
-                                 </label>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;">Да</span>
-                                    <input type="checkbox" name="packAvailInv" />
-                                 </label>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: left;">№</span>
-                                    <input type="text" name="numb" id="numb" size="7px" />
-                                 </label>
-                              </fieldset>
-                           </div>
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Габариты:</legend>
-                                 <label for="lengInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Длина</span>
-                                    <input type="text" name="lengthInv" id="lengInv" size="1px">
-                                 </label>
-                                 <label for="widthInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Ширина</span>
-                                    <input type="text" name="lengthInv" id="widthInv" size="1px">
-                                 </label>
-                                 <label for="hightInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Высота</span>
-                                    <input type="text" name="lengthInv" id="hightInv" size="1px">
-                                 </label>
-                              </fieldset>
-                           </div>
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Вес и кол-во:</legend>
-                                 <label for="seatInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Мест</span>
-                                    <input type="text" name="seatInv" id="seatInv" size="1px">
-                                 </label>
-                                 <label for="weightInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Вес.физ</span>
-                                    <input type="text" name="weightInv" id="weightInv" size="1px">
-                                 </label>
-                                 <label for="wQInv" class="sizes">
-                                    <span class="fieldDescript" style="float: right">вес.куб</span>
-                                    <input type="text" name="wQInv" id="wQInv" size="1px">
-                                 </label>
-                              </fieldset>
-                           </div>
+                  <div class="part fact">
+                     <p>Сведения о фактически прибывшем Отправлении на момент выдачи груза:</p>
+                     <div class="marks twoFlexed">
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Вид отправления:</legend>
+                              <label class="mark">
+                                 <span class="fildDescript" style="float: right;">Груз</span>
+                                 <input type="checkbox" name="departureFact" checked />
+                              </label>
+                              <label class="mark">
+                                 <span class="fildDescript" style="float: right;">Документы</span>
+                                 <input type="checkbox" name="departureFact" />
+                              </label>
+                           </fieldset>
+                           <fieldset>
+                              <legend>Номер упаковки</legend>
+                              <p style="font-size: 12px">Совподает ли номер упаковки<br>с номером указанным в накладной
+                              </p>
+                              <label class="mark" style="margin-top: 10px;">
+                                 <span class="fildDescript" style="float: right;">Нет</span>
+                                 <input type="checkbox" name="packAvailFact" />
+                              </label>
+                              <label class="mark">
+                                 <span class="fildDescript" style="float: right;">Да</span>
+                                 <input type="checkbox" name="packAvailFact" checked />
+                              </label>
+                           </fieldset>
                         </div>
-                        <p>Описание вложения (согласно накладной):____________________________</p>
-                        <div class="twoFlexed">
-                           <textarea style="width: 100%; height: 50px;"></textarea>
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Габариты:</legend>
+                              <label for="lengFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Длина</span>
+                                 <input type="text" name="lengthFact" id="lengFact" size="1px">
+                              </label>
+                              <label for="widthFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Ширина</span>
+                                 <input type="text" name="lengthFact" id="widthFact" size="1px">
+                              </label>
+                              <label for="hightFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Высота</span>
+                                 <input type="text" name="lengthFact" id="hightFact" size="1px">
+                              </label>
+                           </fieldset>
+                        </div>
+                        <div class="checkMark">
+                           <fieldset>
+                              <legend>Вес и кол-во:</legend>
+                              <label for="seatFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Мест</span>
+                                 <input type="text" name="seatFact" id="seatFact" size="1px">
+                              </label>
+                              <label for="weightFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">Вес.физ</span>
+                                 <input type="text" name="weightFact" id="weightFact" size="1px">
+                              </label>
+                              <label for="wQFact" class="sizes">
+                                 <span class="fieldDescript" style="float: right">вес.куб</span>
+                                 <input type="text" name="wQFact" id="wQFact" size="1px">
+                              </label>
+                           </fieldset>
                         </div>
                      </div>
-                     <div class="part fact">
-                        <p>Сведения о фактически прибывшем Отправлении на момент выдачи груза:</p>
-                        <div class="marks twoFlexed">
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Вид отправления:</legend>
-                                 <label class="mark">
-                                    <span class="fildDescript" style="float: right;">Груз</span>
-                                    <input type="checkbox" name="departureFact" checked />
-                                 </label>
-                                 <label class="mark">
-                                    <span class="fildDescript" style="float: right;">Документы</span>
-                                    <input type="checkbox" name="departureFact" />
-                                 </label>
-                              </fieldset>
-                              <fieldset>
-                                 <legend>Номер упаковки</legend>
-                                 <p style="font-size: 12px">Совподает ли номер упаковки<br>с номером указанным в накладной
-                                 </p>
-                                 <label class="mark" style="margin-top: 10px;">
-                                    <span class="fildDescript" style="float: right;">Нет</span>
-                                    <input type="checkbox" name="packAvailFact" />
-                                 </label>
-                                 <label class="mark">
-                                    <span class="fildDescript" style="float: right;">Да</span>
-                                    <input type="checkbox" name="packAvailFact" checked />
-                                 </label>
-                              </fieldset>
-                           </div>
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Габариты:</legend>
-                                 <label for="lengFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Длина</span>
-                                    <input type="text" name="lengthFact" id="lengFact" size="1px">
-                                 </label>
-                                 <label for="widthFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Ширина</span>
-                                    <input type="text" name="lengthFact" id="widthFact" size="1px">
-                                 </label>
-                                 <label for="hightFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Высота</span>
-                                    <input type="text" name="lengthFact" id="hightFact" size="1px">
-                                 </label>
-                              </fieldset>
-                           </div>
-                           <div class="checkMark">
-                              <fieldset>
-                                 <legend>Вес и кол-во:</legend>
-                                 <label for="seatFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Мест</span>
-                                    <input type="text" name="seatFact" id="seatFact" size="1px">
-                                 </label>
-                                 <label for="weightFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">Вес.физ</span>
-                                    <input type="text" name="weightFact" id="weightFact" size="1px">
-                                 </label>
-                                 <label for="wQFact" class="sizes">
-                                    <span class="fieldDescript" style="float: right">вес.куб</span>
-                                    <input type="text" name="wQFact" id="wQFact" size="1px">
-                                 </label>
-                              </fieldset>
-                           </div>
-                        </div>
-                        <label class="twoFlexed" style="margin-top: 11px;">
-                           <textarea style="width: 100%; height: 50px;" disabled></textarea>
+                     <label class="twoFlexed" style="margin-top: 11px;">
+                        <textarea style="width: 100%; height: 50px;" disabled></textarea>
+                     </label>
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="cause">
+                     СВЕДЕНИЯ О ФАКТИЧЕСКИ ПОЛУЧЕНОМ ОТПРАВЛЕНИИ (не по накладной)
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     1. Вид и повреждение внешней Упаковки:
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Вид упаковки:</legend>
+                        <label class="mark packeging">
+                           <span style="float: right;">Мешок</span>
+                           <input type="checkbox" name="packege" />
                         </label>
-                     </div>
+                        <label class="mark packeging">
+                           <span style="float: right;">Пакет</span>
+                           <input type="checkbox" name="packege" checked />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Конверт</span>
+                           <input type="checkbox" name="packege" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Коробка</span>
+                           <input type="checkbox" name="packege" />
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="cause">
-                        СВЕДЕНИЯ О ФАКТИЧЕСКИ ПОЛУЧЕНОМ ОТПРАВЛЕНИИ (не по накладной)
-                     </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Повреждение упаковки:</legend>
+                        <label class="mark" style="margin-top: 10px;">
+                           <span class="fieldDescript" style="float: right;">Нет</span>
+                           <input type="checkbox" name="packDamage" checked />
+                        </label>
+                        <label class="mark">
+                           <span class="fieldDescript" style="float: right;">Да</span>
+                           <input type="checkbox" name="packDamage" />
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="causeIn">
-                        1. Вид и повреждение внешней Упаковки:
-                     </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Доступ к содержимому:</legend>
+                        <label class="mark" style="margin-top: 10px;">
+                           <span class="fieldDescript" style="float: right;">Нет</span>
+                           <input type="checkbox" name="packAcc" checked />
+                        </label>
+                        <label class="mark">
+                           <span class="fieldDescript" style="float: right;">Да</span>
+                           <input type="checkbox" name="packAcc" />
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Вид упаковки:</legend>
-                           <label class="mark packeging">
-                              <span style="float: right;">Мешок</span>
-                              <input type="checkbox" name="packege" />
-                           </label>
-                           <label class="mark packeging">
-                              <span style="float: right;">Пакет</span>
-                              <input type="checkbox" name="packege" checked />
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Конверт</span>
-                              <input type="checkbox" name="packege" />
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Коробка</span>
-                              <input type="checkbox" name="packege" />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Повреждение упаковки:</legend>
-                           <label class="mark" style="margin-top: 10px;">
-                              <span class="fieldDescript" style="float: right;">Нет</span>
-                              <input type="checkbox" name="packDamage" checked />
-                           </label>
-                           <label class="mark">
-                              <span class="fieldDescript" style="float: right;">Да</span>
-                              <input type="checkbox" name="packDamage" />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Доступ к содержимому:</legend>
-                           <label class="mark" style="margin-top: 10px;">
-                              <span class="fieldDescript" style="float: right;">Нет</span>
-                              <input type="checkbox" name="packAcc" checked />
-                           </label>
-                           <label class="mark">
-                              <span class="fieldDescript" style="float: right;">Да</span>
-                              <input type="checkbox" name="packAcc" />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Краткое описание повреждения упаковки:</legend>
-                           <label class="mark" style="margin-top: 10px;">
-                              <textarea style="width: 450px; height: 55px; padding: 3px;"></textarea>
-                           </label>
-                        </fieldset>
-                     </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Краткое описание повреждения упаковки:</legend>
+                        <label class="mark" style="margin-top: 10px;">
+                           <textarea style="width: 450px; height: 55px; padding: 3px;"></textarea>
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="causeIn">
-                        2. Способ защиты упаковки:
-                     </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     2. Способ защиты упаковки:
                   </div>
-                  <div class="twoFlexed">
-                     <div class="tableCare">
-                        <table class="table">
-                           <tr class="fist">
-                              <td></td>
-                              <td>Нет</td>
-                              <td>Есть</td>
-                              <td></td>
-                              <td></td>
-                              <td>Нет</td>
-                              <td>Да</td>
-                           </tr>
-                           <tr class="second">
-                              <td>Пломба</td>
-                              <td>
-                                 <label class="contain">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_plomb"/>
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_plomb"/>
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="dimension">
-                                    <span class="fieldDescript" style="float: left;">№ - </span>
-                                    <input type="text" name="numb" size="10px" />
-                                 </label>
-                              </td>
-                              <td>Повреждение пломбы</td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_plomb"/>
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_plomb" />
-                                 </label>
-                              </td>
-                           </tr>
-                           <tr class="third">
-                              <td>Стикер</td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_stick"/>
+               </div>
+               <div class="twoFlexed">
+                  <div class="tableCare">
+                     <table class="table">
+                        <tr class="fist">
+                           <td></td>
+                           <td>Нет</td>
+                           <td>Есть</td>
+                           <td></td>
+                           <td></td>
+                           <td>Нет</td>
+                           <td>Да</td>
+                        </tr>
+                        <tr class="second">
+                           <td>Пломба</td>
+                           <td>
+                              <label class="contain">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_plomb" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_plomb" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="dimension">
+                                 <span class="fieldDescript" style="float: left;">№ - </span>
+                                 <input type="text" name="numb" size="10px" />
+                              </label>
+                           </td>
+                           <td>Повреждение пломбы</td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_plomb" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_plomb" />
+                              </label>
+                           </td>
+                        </tr>
+                        <tr class="third">
+                           <td>Стикер</td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_stick" />
                                  <label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_stick" />
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="dimension">
-                                    <span class="fieldDescript" style="float: left;">№ - </span>
-                                    <input type="text" name="numb" id="numb" size="10px" />
-                                 </label>
-                              </td>
-                              <td>Повреждение стикера</td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_stick" />
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_stick" />
-                                 </label>
-                              </td>
-                           </tr>
-                           <tr class="forth">
-                              <td>Скотч</td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_scotch" />
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protMethod_scotch" />
-                                 </label>
-                              </td>
-                              <td></td>
-                              <td>Повреждение скотча</td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_scotch" />
-                                 </label>
-                              </td>
-                              <td>
-                                 <label class="mark">
-                                    <span class="fieldDescript" style="float: right;"></span>
-                                    <input type="checkbox" name="protDem_scotch" />
-                                 </label>
-                              </td>
-                           </tr>
-                        </table>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Краткое описание повреждения пломбы/стикера/скотча:</legend>
-                           <label class="mark" style="margin-top: 10px;">
-                              <textarea style="width: 450px; height: 57px; padding: 3px;"></textarea>
-                           </label>
-                        </fieldset>
-                     </div>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_stick" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="dimension">
+                                 <span class="fieldDescript" style="float: left;">№ - </span>
+                                 <input type="text" name="numb" id="numb" size="10px" />
+                              </label>
+                           </td>
+                           <td>Повреждение стикера</td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_stick" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_stick" />
+                              </label>
+                           </td>
+                        </tr>
+                        <tr class="forth">
+                           <td>Скотч</td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_scotch" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protMethod_scotch" />
+                              </label>
+                           </td>
+                           <td></td>
+                           <td>Повреждение скотча</td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_scotch" />
+                              </label>
+                           </td>
+                           <td>
+                              <label class="mark">
+                                 <span class="fieldDescript" style="float: right;"></span>
+                                 <input type="checkbox" name="protDem_scotch" />
+                              </label>
+                           </td>
+                        </tr>
+                     </table>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="causeIn">
-                        3. Сведения о повреждении внутренней Упаковки:
-                     </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Краткое описание повреждения пломбы/стикера/скотча:</legend>
+                        <label class="mark" style="margin-top: 10px;">
+                           <textarea style="width: 450px; height: 57px; padding: 3px;"></textarea>
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Внутренняя упаковка:</legend>
-                           <p>Наличие дополнительной<br>внутренней упаковки</p>
-                           <label class="mark" style="margin-top: 10px;">
-                              <span class="fieldDescript" style="float: right;">Нет</span>
-                              <input type="checkbox" name="innerPack" />
-                           </label>
-                           <label class="mark">
-                              <span class="fieldDescript" style="float: right;">Да</span>
-                              <input type="checkbox" name="innerPack" checked />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Повреждение:</legend>
-                           <p>Повреждение внутренней<br>упаковки</p>
-                           <label class="mark" style="margin-top: 10px;">
-                              <span class="fieldDescript" style="float: right;">Нет</span>
-                              <input type="checkbox" name="innerPackDam" />
-                           </label>
-                           <label class="mark">
-                              <span class="fieldDescript" style="float: right;">Да</span>
-                              <input type="checkbox" name="innerPackDam" checked />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Характер повреждений:</legend>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Нарушен скотч на стыках</span>
-                              <input type="checkbox" name="natureDamage_InnPack"/>
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Деформирована коробка</span>
-                              <input type="checkbox" name="natureDamage_InnPack"/>
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Порвана коробка</span>
-                              <input type="checkbox" name="natureDamage_InnPack" />
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Намочена коробка</span>
-                              <input type="checkbox" name="natureDamage_InnPack"/>
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Лопнула упаковка</span>
-                              <input type="checkbox" name="natureDamage_InnPack" />
-                           </label>
-                           <label class="mark packeging">
-                              <span class="fieldDescript" style="float: right;">Разбита упаковка</span>
-                              <input type="checkbox" name="natureDamage_InnPack" id="desBroke" />
-                           </label>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Прочее</legend>
-                           <p>Краткое описание повреждений внутренней<br>упаковки</p>
-                           <label class="mark" style="margin-top: 10px;">
-                              <textarea style="width: 350px; height: 60px; padding: 3px;"></textarea>
-                           </label>
-                        </fieldset>
-                     </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     3. Сведения о повреждении внутренней Упаковки:
                   </div>
-                  <div class="twoFlexed">
-                     <div class="causeIn">
-                        4. Повреждение груза:
-                     </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Внутренняя упаковка:</legend>
+                        <p>Наличие дополнительной<br>внутренней упаковки</p>
+                        <label class="mark" style="margin-top: 10px;">
+                           <span class="fieldDescript" style="float: right;">Нет</span>
+                           <input type="checkbox" name="innerPack" />
+                        </label>
+                        <label class="mark">
+                           <span class="fieldDescript" style="float: right;">Да</span>
+                           <input type="checkbox" name="innerPack" checked />
+                        </label>
+                     </fieldset>
                   </div>
-                  <div class="twoFlexed">
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Характер повреждений:</legend>
-                           <div class="twoFlexed">
-                              <div class="packeging">
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Нарушен товарный вид</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Груз деформирован</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Механическая поломка</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Физическая поломка</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Техническая поломка</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Сколы на грузе</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                              </div>
-                              <div class="packeging" style="margin-left: 30px;">
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Сгибы на грузе</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Трещины на грузе</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Прокол на грузе</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Груз разбит (стекло)</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Пересорт груза</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                                 <label class="mark packeging">
-                                    <span class="fieldDescript" style="float: right;">Недовложения</span>
-                                    <input type="checkbox" name="natureDamage_OutPack" />
-                                 </label>
-                              </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Повреждение:</legend>
+                        <p>Повреждение внутренней<br>упаковки</p>
+                        <label class="mark" style="margin-top: 10px;">
+                           <span class="fieldDescript" style="float: right;">Нет</span>
+                           <input type="checkbox" name="innerPackDam" />
+                        </label>
+                        <label class="mark">
+                           <span class="fieldDescript" style="float: right;">Да</span>
+                           <input type="checkbox" name="innerPackDam" checked />
+                        </label>
+                     </fieldset>
+                  </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Характер повреждений:</legend>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Нарушен скотч на стыках</span>
+                           <input type="checkbox" name="natureDamage_InnPack" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Деформирована коробка</span>
+                           <input type="checkbox" name="natureDamage_InnPack" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Порвана коробка</span>
+                           <input type="checkbox" name="natureDamage_InnPack" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Намочена коробка</span>
+                           <input type="checkbox" name="natureDamage_InnPack" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Лопнула упаковка</span>
+                           <input type="checkbox" name="natureDamage_InnPack" />
+                        </label>
+                        <label class="mark packeging">
+                           <span class="fieldDescript" style="float: right;">Разбита упаковка</span>
+                           <input type="checkbox" name="natureDamage_InnPack" id="desBroke" />
+                        </label>
+                     </fieldset>
+                  </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Прочее</legend>
+                        <p>Краткое описание повреждений внутренней<br>упаковки</p>
+                        <label class="mark" style="margin-top: 10px;">
+                           <textarea style="width: 350px; height: 60px; padding: 3px;"></textarea>
+                        </label>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     4. Повреждение груза:
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Характер повреждений:</legend>
+                        <div class="twoFlexed">
+                           <div class="packeging">
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Нарушен товарный вид</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Груз деформирован</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Механическая поломка</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Физическая поломка</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Техническая поломка</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Сколы на грузе</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
                            </div>
-                        </fieldset>
-                     </div>
-                     <div class="visibility">
-                        <fieldset>
-                           <legend>Прочие сведения о повреждении:</legend>
-                           <p>Дополнительная иформация о повреждении груза (письменно)</p>
-                           <label class="mark" style="margin-top: 10px;">
-                              <textarea style="width: 570px; height: 87px; padding: 3px;"></textarea>
-                           </label>
-                        </fieldset>
-                     </div>
-                  </div>
-                  <div class="twoFlexed">
-                     <div class="causeIn">
-                        5. Подписи:
-                     </div>
-                  </div>
-                  <div class="twoFlexed">
-                     <div class="part">
-                        <div class="participant">
-                           <p>Представитель службы доставки "Экспресс доставка":</p>
-                           <div class="adress">
-                              <p>ПВЗ на Балаклавском проспекте дом 5</p>
+                           <div class="packeging" style="margin-left: 30px;">
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Сгибы на грузе</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Трещины на грузе</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Прокол на грузе</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Груз разбит (стекло)</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Пересорт груза</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
+                              <label class="mark packeging">
+                                 <span class="fieldDescript" style="float: right;">Недовложения</span>
+                                 <input type="checkbox" name="natureDamage_OutPack" />
+                              </label>
                            </div>
-                           <br><br>
-                           <div class="signature manager">
-                              <div class="mark">______________</div>
-                              <div class="mark">&emsp;/&emsp;____________________________</div>
-                              <div style="text-align:center"><sup>подпись</sup></div>
-                           </div>
-                           <br>
                         </div>
-                     </div>
-                     <div class="part">
-                        <div class="participant">
-                           <p>Клиент / Представитель клиента / Получатель:</p>
-                           <br><br><br>
-                           <div class="signature client">
-                              <div class="mark"></div>
-                              <div class="mark">____________________________</div>
-                              <div style="text-align:center"><sup>подпись</sup></div>
-                           </div>
-                           <br>
+                     </fieldset>
+                  </div>
+                  <div class="visibility">
+                     <fieldset>
+                        <legend>Прочие сведения о повреждении:</legend>
+                        <p>Дополнительная иформация о повреждении груза (письменно)</p>
+                        <label class="mark" style="margin-top: 10px;">
+                           <textarea style="width: 570px; height: 87px; padding: 3px;"></textarea>
+                        </label>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     5. Возмещение: Реквизиты для компенсации
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="part">
+                     <fieldset>
+                        <legend>Наличными в ПВЗ (касса пункта)
+                           <input type="checkbox" name="compens">
+                        </legend>
+                        <textarea
+                           style="min-width: 295px; min-height: 110px; padding: 3px; resize: none; text-align: center; overflow: hidden;">Для получения компенсациоонной суммы требуется Паспорт (оригинал), положительное решение по компенсации. __________________________________</textarea>
+                     </fieldset>
+                  </div>
+                  <div class="part">
+                     <fieldset>
+                        <legend>По Системе Быстрых Платежей (СПБ)
+                           <input type="checkbox" name="compens" checked>
+                        </legend>
+                        <textarea
+                           style="min-width: 295px; min-height: 110px; padding: 3px; resize: none; text-align: center; overflow: hidden;"> Номер телефона привязанный к карте: __________________________________ Получателем по карте является: __________________________________ Номер карты клиента: __________________________________
+                           </textarea>
+                     </fieldset>
+                  </div>
+                  <div class="part">
+                     <fieldset>
+                        <legend>На карту банка (реквизиты)
+                           <input type="checkbox" name="compens">
+                        </legend>
+                        <textarea
+                           style="min-width: 295px; min-height: 110px; padding: 3px; resize: none; text-align: center; overflow: hidden;">Банк получателя: _____________________ р/счет: ______________________________ к/счет: ______________________________ БИК: _______________________________ Номер карты клиента: ____________________________________</textarea>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="causeIn">
+                     6. Подписи:
+                  </div>
+               </div>
+               <div class="twoFlexed">
+                  <div class="part">
+                     <div class="participant">
+                        <p>Представитель службы доставки "Экспресс доставка":</p>
+                        <div class="adress">
+                           <p>ПВЗ на Балаклавском проспекте дом 5</p>
                         </div>
+                        <br><br>
+                        <div class="signature manager">
+                           <div class="mark">______________</div>
+                           <div class="mark">&emsp;/&emsp;____________________________</div>
+                           <div style="text-align:center"><sup>подпись</sup></div>
+                        </div>
+                        <br>
+                     </div>
+                  </div>
+                  <div class="part">
+                     <div class="participant">
+                        <p>Клиент / Представитель клиента / Получатель:</p>
+                        <br><br><br>
+                        <div class="signature client">
+                           <div class="mark"></div>
+                           <div class="mark">____________________________</div>
+                           <div style="text-align:center"><sup>подпись</sup></div>
+                        </div>
+                        <br>
                      </div>
                   </div>
                </div>
-            </main>
-            <footer class="footer">
-               <div class="navigation">
-                  <button class="btn send" type="submit">Отправить</button>
-                  <button class="btn print" type="button">Печать</button>
-                  <button class="btn fresh" type="reset">Очистить</button>
-               </div>
-            </footer>
-         </form>
-      </div> <!--MotherBoard -->
+            </div>
+         </main>
+         <footer class="footer">
+            <div class="navigation">
+               <button class="btn send" type="submit">Отправить</button>
+               <button class="btn print" type="button">Печать</button>
+               <button class="btn fresh" type="reset">Очистить</button>
+            </div>
+         </footer>
+      </form>
+   </div>
+   <!--MotherBoard -->
    <script src="java.js"></script>
 </body>
 

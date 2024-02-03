@@ -6,7 +6,7 @@ const options = {
 
 const currentDate = current.toLocaleDateString('ru-Ru', options);
 try {
-   document.querySelector('.date').textContent = currentDate;   
+   document.querySelector('.date').textContent = currentDate;
 
 
    document.querySelector('#manager').addEventListener('change', () => {
@@ -18,6 +18,26 @@ try {
    document.querySelector('#client').addEventListener('change', () => {
       const chacked = document.querySelector('#client');
       document.querySelector('.client').querySelector(".mark").innerHTML = chacked.value;
+   });
+
+   document.getElementsByName('compens').forEach((item) => {
+      item.addEventListener('change', () => {
+         let element = document.getElementsByName('compens');
+         for (let i = 0; i < element.length; i++) {
+            element[i].checked = false;
+         }
+         item.checked = true;
+      })
+   });
+
+   document.getElementsByName('priority').forEach((item) => {
+      item.addEventListener('change', () => {
+         let element = document.getElementsByName('priority');
+         for (let i = 0; i < element.length; i++) {
+            element[i].checked = false;
+         }
+         item.checked = true;
+      })
    });
 
    document.getElementsByName('departureInv').forEach((item) => {
@@ -189,11 +209,11 @@ try {
    });
 
    document.querySelector('input#wQFact').addEventListener('click', () => {
-         if (lenF.value || widF.value || heiF.value) {
-            wQFact_val.value = (Number(lenF.value * widF.value * heiF.value) / 5000).toFixed(2);
-         } else {
-            wQFact_val.value = 0;
-         }
+      if (lenF.value || widF.value || heiF.value) {
+         wQFact_val.value = (Number(lenF.value * widF.value * heiF.value) / 5000).toFixed(2);
+      } else {
+         wQFact_val.value = 0;
+      }
    });
 
    //---------------------- Finish buttons---------------------//
@@ -213,31 +233,31 @@ try {
 } catch (error) {
    console.log("Непредвиденная ошибка" + error);
 };
-
 /* ------------------------------------------------------------------------------------------------ */
-let htmlBlock = '<div class="modalBody"> \
-   <div class="modal"> \
-      <div class="modal-foto"><img src="${}" alt="${}" width="50px" height="50px" style="margin: auto; margin-top: 3px;"></div> \
-      <div class="modal-off_manager">${}</div> \
-   </div> \
-   <div class="modal"> \
-      <div class="modal-info"> \
-         <ul> \
-            <li>Стаж в компании - <span>${}</span> лет/года</li> \
-            <li>Количество выходов - <span>${}</span></li> \
-            <li>Рейтинг - <span>${}</span></li>\
-            <li>Стоимость смены - <span>${}</span>&#8381;</li> \
-            <li>Предворительная сумма оплаты - <span>${}</span>&#8381;</li> \
-         </ul> \
-      </div> \
-   </div> \
-</div>'
+               /* let htmlBlock = '<div class="modalBody"> \
+                  <div class="modal"> \
+                     <div class="modal-foto"><img src="${}" alt="${}" width="50px" height="50px" style="margin: auto; margin-top: 3px;"></div> \
+                     <div class="modal-off_manager">${}</div> \
+                  </div> \
+                  <div class="modal"> \
+                     <div class="modal-info"> \
+                        <ul> \
+                           <li>Стаж в компании - <span>${}</span> лет/года</li> \
+                           <li>Количество выходов - <span>${}</span></li> \
+                           <li>Рейтинг - <span>${}</span></li>\
+                           <li>Стоимость смены - <span>${}</span>&#8381;</li> \
+                           <li>Предворительная сумма оплаты - <span>${}</span>&#8381;</li> \
+                        </ul> \
+                     </div> \
+                  </div> \
+               </div>' */
 let officer = Array.from(document.querySelectorAll('.officer'));
 let modalBody = document.querySelector(".modalBody")
+const workDays = document.querySelectorAll('[bgcolor="#091fad"]');
+const modal_foto = document.querySelector('.modal-foto');
 officer.forEach((item) => {
-// const workDays = item.querySelectorAll('[bgcolor="#091fad"]');//
-// const advPayment = Number(3100 * workDays.length).toFixed(2);//
-// document.querySelector('.modalBody').textContent = officer.indexOf(item);//
+   //const advPayment = Number(3100 * workDays.length).toFixed(2);//
+   //document.querySelector('.modalBody').textContent = officer.indexOf(item);//
    item.addEventListener('mousedown', () => {
       document.querySelector('.modalBlock').style.display = "block";
       document.querySelector('.modalBlock').insertAdjacentHTML('afterbegin', htmlBlock);
